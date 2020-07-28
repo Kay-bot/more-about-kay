@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "My portfolio showing my works",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kay-bot/more-about-kay.git"
+  },
+  "author": "Kay Srikaew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kay-bot/more-about-kay/issues"
+  },
+  "homepage": "https://github.com/Kay-bot/more-about-kay#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
