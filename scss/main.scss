@@ -74,7 +74,8 @@ img {
 // Header
 #header {
   &-home {
-    background: $bg-image no-repeat center right / cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-image no-repeat center right / cover;
     height: 100vh;
     color: #fff;
 
@@ -89,6 +90,10 @@ img {
     }
   }
   &-inner {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -144,7 +149,7 @@ img {
         right: 0;
         font-size: 28px;
         background: $main-color;
-        color:set-text-color($main-color)
+        color: set-text-color($main-color);
         border-radius: 50%;
         height: 35px;
         width: 35px;
@@ -171,9 +176,52 @@ img {
 
           .process-step {
             background-color: $dark-color;
-            color:set-text-color($dark-color)
+            color: set-text-color($dark-color);
           }
         }
+      }
+    }
+  }
+}
+
+// About Sections
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        "bioimage bio bio"
+        "aw1 aw2 aw3";
+      grid-gap: 1.2rem;
+
+      .bio-image {
+        grid-area: bioimage;
+      }
+
+      .bio {
+        grid-area: bio;
+        border-left: 3px solid $main-color;
+      }
+
+      .award-1 {
+        grid-area: aw1;
+      }
+      .award-2 {
+        grid-area: aw2;
+      }
+      .award-3 {
+        grid-area: aw3;
+      }
+
+      .award-1 .fas,
+      .award-2 .fas,
+      .award-3 .fas {
+        color: $main-color;
+        margin: 1rem;
+      }
+
+      img {
+        opacity: 0.85;
       }
     }
   }

@@ -28,6 +28,22 @@ a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: #ffbc00; }
 
+.bg-main {
+  background-color: #ffbc00;
+  color: #fff; }
+
+.bg-dark {
+  background-color: #333;
+  color: #fff; }
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background-color: #ccc;
+  color: #000; }
+
 .lead {
   font-size: 1.5rem;
   margin-bottom: 2rem; }
@@ -125,7 +141,7 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("../img/showcase.jpg") no-repeat center right/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -134,6 +150,11 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -175,6 +196,7 @@ img {
     right: 0;
     font-size: 28px;
     background: #ffbc00;
+    color: #fff;
     border-radius: 50%;
     height: 35px;
     width: 35px;
@@ -197,7 +219,31 @@ img {
       height: 90px;
       line-height: 90px; }
       #home-c .process-icon:hover .process-step {
-        background-color: #333; }
+        background-color: #333;
+        color: #fff; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem; }
+  #about-a .about-info .bio-image {
+    grid-area: bioimage; }
+  #about-a .about-info .bio {
+    grid-area: bio;
+    border-left: 3px solid #ffbc00; }
+  #about-a .about-info .award-1 {
+    grid-area: aw1; }
+  #about-a .about-info .award-2 {
+    grid-area: aw2; }
+  #about-a .about-info .award-3 {
+    grid-area: aw3; }
+  #about-a .about-info .award-1 .fas,
+  #about-a .about-info .award-2 .fas,
+  #about-a .about-info .award-3 .fas {
+    color: #ffbc00;
+    margin: 1rem; }
+  #about-a .about-info img {
+    opacity: 0.85; }
 
 #main-footer {
   background: #333;
