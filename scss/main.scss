@@ -144,6 +144,7 @@ img {
         right: 0;
         font-size: 28px;
         background: $main-color;
+        color:set-text-color($main-color)
         border-radius: 50%;
         height: 35px;
         width: 35px;
@@ -170,6 +171,7 @@ img {
 
           .process-step {
             background-color: $dark-color;
+            color:set-text-color($dark-color)
           }
         }
       }
