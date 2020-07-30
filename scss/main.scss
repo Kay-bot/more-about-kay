@@ -116,24 +116,25 @@ img {
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-    }
-    li {
-      line-height: 2;
-      &.stats-title {
-        font-size: 1.5rem;
+      li {
+        line-height: 2;
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
       }
-      &.stats-number {
-        font-size: 2rem;
-        font-weight: bold;
-      }
-    }
-    div {
-      padding: 3rem 0;
-      &:nth-child(odd) {
-        background: $light-color;
-      }
-      &:nth-child(even) {
-        background: $medium-color;
+      div {
+        padding: 3rem 0;
+        border: 1px solid $main-color;
+        &:nth-child(odd) {
+          background: $light-color;
+        }
+        &:nth-child(even) {
+          background: $medium-color;
+        }
       }
     }
   }
@@ -369,3 +370,6 @@ img {
     }
   }
 }
+
+// import Media Query
+@import "media";
