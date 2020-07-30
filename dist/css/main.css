@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #ffbc00; }
+  background-color: #ce40db; }
 
 .btn-light {
   color: #333;
@@ -26,11 +26,11 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #ffbc00; }
+  background-color: #ce40db; }
 
 .bg-main {
-  background-color: #ffbc00;
-  color: #fff; }
+  background-color: #ce40db;
+  color: #000; }
 
 .bg-dark {
   background-color: #333;
@@ -41,7 +41,7 @@ input[class^="btn-"]:hover {
   color: #000; }
 
 .bg-medium {
-  background-color: #ccc;
+  background-color: #ddb8e0;
   color: #000; }
 
 .lead {
@@ -89,7 +89,7 @@ input[class^="btn-"]:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: #ffbc00;
+  background: #ce40db;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -100,7 +100,7 @@ input[class^="btn-"]:hover {
 
 .item {
   position: relative;
-  background: #ffbc00;
+  background: #ce40db;
   overflow: hidden; }
   .item::after {
     content: "";
@@ -213,9 +213,9 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: #ccc; }
+      border-color: #ddb8e0; }
     #main-nav a.current {
-      border-color: #ffbc00; }
+      border-color: #ce40db; }
 
 #header-home {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/showcase.jpg") no-repeat center right/cover;
@@ -231,7 +231,7 @@ img {
 #header-inner {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
-  border-bottom: 3px solid #ffbc00; }
+  border-bottom: 3px solid #ce40db; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -240,7 +240,7 @@ img {
   grid-template-columns: repeat(4, 1fr); }
 
 #home-a .fas {
-  color: #ffbc00;
+  color: #ce40db;
   padding-bottom: 0.4rem; }
 
 #home-b .stats {
@@ -258,7 +258,7 @@ img {
     #home-b .stats div:nth-child(odd) {
       background: #f4f4f4; }
     #home-b .stats div:nth-child(even) {
-      background: #ccc; }
+      background: #ddb8e0; }
 
 #home-c .process {
   display: grid;
@@ -270,8 +270,8 @@ img {
     top: 0;
     right: 0;
     font-size: 28px;
-    background: #ffbc00;
-    color: #fff;
+    background: #ce40db;
+    color: #000;
     border-radius: 50%;
     height: 35px;
     width: 35px;
@@ -289,7 +289,7 @@ img {
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
-      background-color: #ffbc00;
+      background-color: #ce40db;
       width: 90px;
       height: 90px;
       line-height: 90px; }
@@ -307,7 +307,7 @@ img {
     grid-area: bioimage; }
   #about-a .about-info .bio {
     grid-area: bio;
-    border-left: 3px solid #ffbc00; }
+    border-left: 3px solid #ce40db; }
   #about-a .about-info .award-1 {
     grid-area: aw1; }
   #about-a .about-info .award-2 {
@@ -317,20 +317,20 @@ img {
   #about-a .about-info .award-1 .fas,
   #about-a .about-info .award-2 .fas,
   #about-a .about-info .award-3 .fas {
-    color: #ffbc00;
+    color: #ce40db;
     margin: 1rem; }
 
 #about-b .progress {
   overflow: hidden;
   height: 20px;
-  background: #ccc;
+  background: #ddb8e0;
   border-radius: 5px;
   margin-bottom: 0.3rem; }
   #about-b .progress div {
     height: 100%;
     color: #fff;
     text-align: center;
-    background: #ffbc00; }
+    background: #ce40db; }
 
 #about-c .about-logos {
   display: grid;
@@ -351,7 +351,7 @@ img {
     display: flex;
     align-items: center; }
   #about-d .testimonials p {
-    border: 1px solid #ccc;
+    border: 1px solid #ddb8e0;
     border-radius: 5px;
     padding: 0.5rem; }
   #about-d .testimonials img {
@@ -410,7 +410,7 @@ img {
       text-align: center;
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
-        background-color: #ffbc00; }
+        background-color: #ce40db; }
 
 @media (max-width: 800px) {
   #header-home {
@@ -426,7 +426,7 @@ img {
       padding: 1rem; }
   #header-home {
     height: 10rem;
-    border-bottom: 3px solid #ffbc00;
+    border-bottom: 3px solid #ce40db;
     background-position: 20% 30%; }
     #header-home .header-content {
       display: none; }
