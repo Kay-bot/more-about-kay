@@ -63,6 +63,9 @@ input[class^="btn-"]:hover {
 .py-3 {
   padding: 4rem 0; }
 
+.py-4 {
+  padding: 5rem 0; }
+
 .my-1 {
   margin: 1rem 0; }
 
@@ -244,6 +247,26 @@ img {
     margin: 1rem; }
   #about-a .about-info img {
     opacity: 0.85; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.3rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: #ffbc00; }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem; }
+  #about-c .about-logos img {
+    width: 5rem;
+    height: 5rem; }
 
 #main-footer {
   background: #333;
