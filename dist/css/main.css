@@ -254,8 +254,7 @@ img {
       font-size: 2rem;
       font-weight: bold; }
   #home-b .stats div {
-    padding: 3rem 0;
-    border: 1px solid #ffbc00; }
+    padding: 3rem 0; }
     #home-b .stats div:nth-child(odd) {
       background: #f4f4f4; }
     #home-b .stats div:nth-child(even) {
@@ -302,6 +301,8 @@ img {
   display: grid;
   grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
   grid-gap: 1.2rem; }
+  #about-a .about-info img {
+    opacity: 0.85; }
   #about-a .about-info .bio-image {
     grid-area: bioimage; }
   #about-a .about-info .bio {
@@ -318,8 +319,6 @@ img {
   #about-a .about-info .award-3 .fas {
     color: #ffbc00;
     margin: 1rem; }
-  #about-a .about-info img {
-    opacity: 0.85; }
 
 #about-b .progress {
   overflow: hidden;
@@ -447,35 +446,29 @@ img {
       border-bottom: none;
       padding-bottom: 0; }
   #home-b .stats div {
-    padding: 1rem 0; } }
-
-#about-a .about-info {
-  grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
-
-#about-c {
-  display: none; }
-
-#contact-a .text-fields {
-  grid-template-areas: "name" "subject" "email" "phone" "message"; }
-
-#contact-b .contact-info div {
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #555; }
-  #contact-b .contact-info div:last-child {
-    border: none;
-    padding-bottom: 0;
-    margin-bottom: 0; }
-
-#contact-c h1 {
-  font-size: 2rem; }
-
-#main-footer {
-  height: 7rem; }
-  #main-footer .footer-content {
-    flex-direction: column;
-    padding: 1rem;
-    height: 5rem; }
+    padding: 1rem 0; }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
+  #about-c {
+    display: none; }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    #contact-b div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem; } }
 
 @media (max-height: 580px) {
   #header-home .header-content {

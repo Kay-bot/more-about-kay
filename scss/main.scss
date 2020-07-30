@@ -128,7 +128,6 @@ img {
       }
       div {
         padding: 3rem 0;
-        border: 1px solid $main-color;
         &:nth-child(odd) {
           background: $light-color;
         }
@@ -190,6 +189,9 @@ img {
 #about {
   &-a {
     .about-info {
+      img {
+        opacity: 0.85;
+      }
       display: grid;
       grid-template-areas:
         "bioimage bio bio"
@@ -220,10 +222,6 @@ img {
       .award-3 .fas {
         color: $main-color;
         margin: 1rem;
-      }
-
-      img {
-        opacity: 0.85;
       }
     }
   }
