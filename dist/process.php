@@ -11,5 +11,5 @@
     //send email
     mail($admin_email, "New Form Submission", $message . ' - ' . $phone, "From:" . $email);
     
-    header('Location: www.kay-srikaew.com/success.html');
+    header('Location: http://kay-srikaew.com/success.html');
   }
