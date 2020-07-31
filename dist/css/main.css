@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap");
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -192,9 +193,11 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%; }
+  width: fit-content;
+  height: 80px;
+  font-family: "Oleo Script", cursive;
+  font-size: 1.5rem;
+  color: #fff; }
 
 #main-nav {
   display: flex;
