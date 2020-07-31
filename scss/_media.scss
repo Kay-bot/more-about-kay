@@ -36,8 +36,6 @@
 
   //   Stack Grid Columns
   #home-a .specials,
-  #home-b .stats,
-  #home-c .process,
   #contact-b .contact-info,
   .items {
     grid-template-columns: 1fr;
@@ -53,11 +51,6 @@
           border-bottom: none;
           padding-bottom: 0;
         }
-      }
-    }
-    &-b {
-      .stats div {
-        padding: 1rem 0;
       }
     }
   }
