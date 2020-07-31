@@ -344,11 +344,11 @@ img {
     #main-nav li {
       padding: 1rem; }
   #header-home {
-    height: 10rem;
+    height: 30rem;
     border-bottom: 3px solid #ce40db;
     background-position: 20% 30%; }
-    #header-home .header-content {
-      display: none; }
+    #header-home .header-content h1 {
+      font-size: 2rem; }
   #header-inner {
     height: 10rem; }
   #home-a .specials,
