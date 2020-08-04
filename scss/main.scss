@@ -122,6 +122,8 @@ img {
     .about-info {
       img {
         opacity: 0.85;
+        width: 150px;
+        height: 150px;
       }
       display: grid;
       grid-template-areas: "bioimage bio bio";
@@ -134,6 +136,14 @@ img {
       .bio {
         grid-area: bio;
         border-left: 3px solid $main-color;
+        width: 100%;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+
+        p {
+          text-align: left;
+          padding: 10px;
+        }
       }
     }
   }
@@ -142,7 +152,7 @@ img {
     .progress {
       overflow: hidden;
       height: 20px;
-      background: $medium-color;
+      background: $main-color;
       border-radius: 5px;
       margin-bottom: 0.3rem;
 
@@ -150,7 +160,7 @@ img {
         height: 100%;
         color: #fff;
         text-align: center;
-        background: $main-color;
+        background: $secondary-color;
       }
     }
   }
@@ -167,6 +177,99 @@ img {
         border-radius: 8px;
       }
     }
+  }
+}
+
+// Timeline
+#timeline {
+  ul {
+    background: $light-color;
+    padding: 50px 0;
+
+    li {
+      // Create Line
+      list-style: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: $medium-color;
+
+      // Box
+      div {
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        padding: 1rem;
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        transition: all 0.5s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+
+        // Arrows Base
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 5px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+        }
+      }
+      // Right Side
+      &:nth-child(odd) div {
+        left: 40px;
+        transform: translate(200px, 0);
+
+        // Right Side Arrows
+        &::before {
+          left: -15px;
+          border-width: 8px 16px 8px 0;
+          border-color: transparent $secondary-color transparent transparent;
+        }
+      }
+
+      // Letf Side
+      &:nth-child(even) div {
+        left: -434px;
+        transform: translate(-200px, 0);
+
+        /* Left Side Arrows */
+        &::before {
+          right: -15px;
+          border-width: 8px 0 8px 16px;
+          border-color: transparent transparent transparent $secondary-color;
+        }
+      }
+
+      // Dots
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        background: inherit;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        transition: background 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+// Show boxes
+#timeline ul li.show {
+  div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:after {
+    background: $secondary-color;
   }
 }
 

@@ -7,6 +7,16 @@
       padding-top: 3rem;
     }
   }
+
+  #timeline ul li {
+    div {
+      width: 250px;
+    }
+
+    &:nth-child(even) div {
+      left: -284px;
+    }
+  }
 }
 
 // Smartphones
@@ -64,6 +74,12 @@
         grid-template-areas:
           "bioimage"
           "bio";
+
+        img {
+          opacity: 0.85;
+          width: 100%;
+          height: auto;
+        }
       }
     }
 
@@ -72,6 +88,24 @@
     }
   }
 
+  // Timeline
+  #timeline ul li {
+    margin-left: 12px;
+
+    div {
+      width: calc(100vw - 100px);
+    }
+
+    &:nth-child(even) div {
+      left: 40px;
+
+      &::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent $secondary-color transparent transparent;
+      }
+    }
+  }
   // Contact
   #contact {
     &-a {
