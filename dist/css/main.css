@@ -321,7 +321,7 @@ img {
         border-width: 8px 16px 8px 0;
         border-color: transparent #5a40a9 transparent transparent; }
     #timeline ul li:nth-child(even) div {
-      left: -434px;
+      left: -480px;
       transform: translate(-200px, 0);
       /* Left Side Arrows */ }
       #timeline ul li:nth-child(even) div::before {
@@ -409,7 +409,7 @@ img {
   #timeline ul li div {
     width: 250px; }
   #timeline ul li:nth-child(even) div {
-    left: -284px; } }
+    left: -320px; } }
 
 @media (max-width: 500px) {
   #main-nav {
