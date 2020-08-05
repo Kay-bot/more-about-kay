@@ -181,7 +181,11 @@ img {
 }
 
 // Timeline
+
 #timeline {
+  .icon .fas {
+    color: $main-color;
+  }
   ul {
     background: $light-color;
     padding: 50px 0;
