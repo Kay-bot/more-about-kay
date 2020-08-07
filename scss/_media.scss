@@ -106,6 +106,15 @@
       }
     }
   }
+
+  // Project
+  #project {
+    .project-info {
+      grid-template-areas:
+        "projectimage"
+        "detail";
+    }
+  }
   // Contact
   #contact {
     &-a {

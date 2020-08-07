@@ -277,6 +277,47 @@ img {
   }
 }
 
+// Projects
+#project {
+  .project-info {
+    display: grid;
+    grid-template-areas: "projectimage detail detail";
+    grid-gap: 1.2rem;
+
+    .project-image {
+      grid-area: projectimage;
+      text-align: center;
+    }
+
+    .detail {
+      grid-area: detail;
+      width: 100%;
+      border-left: 3px solid $main-color;
+      background: $medium-color;
+      color: set-text-color($medium-color);
+
+      p {
+        text-align: left;
+        padding: 10px;
+      }
+
+      i,
+      a {
+        display: inline-block;
+      }
+      a {
+        padding-right: 0.5rem;
+        color: #333;
+      }
+
+      li {
+        text-align: left;
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
 // Contact Page
 #contact {
   &-a {

@@ -355,6 +355,32 @@ img {
 #timeline ul li.show:after {
   background: #5a40a9; }
 
+#project .project-info {
+  display: grid;
+  grid-template-areas: "projectimage detail detail";
+  grid-gap: 1.2rem; }
+  #project .project-info .project-image {
+    grid-area: projectimage;
+    text-align: center; }
+  #project .project-info .detail {
+    grid-area: detail;
+    width: 100%;
+    border-left: 3px solid #ce40db;
+    background: #ddb8e0;
+    color: #000; }
+    #project .project-info .detail p {
+      text-align: left;
+      padding: 10px; }
+    #project .project-info .detail i,
+    #project .project-info .detail a {
+      display: inline-block; }
+    #project .project-info .detail a {
+      padding-right: 0.5rem;
+      color: #333; }
+    #project .project-info .detail li {
+      text-align: left;
+      padding-left: 1rem; }
+
 #contact-a .text-fields {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
@@ -460,6 +486,8 @@ img {
         left: -15px;
         border-width: 8px 16px 8px 0;
         border-color: transparent #5a40a9 transparent transparent; }
+  #project .project-info {
+    grid-template-areas: "projectimage" "detail"; }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; }
   #contact-b div {
