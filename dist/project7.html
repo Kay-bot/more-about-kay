@@ -23,7 +23,7 @@
           <!-- <img src="img/logo.png" alt="my portfolio" id="logo" /> -->
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="index.html#work-a">Work</a></li>
             <li><a href="index.html#contact-a">Contact</a></li>
           </ul>
@@ -31,14 +31,38 @@
       </div>
     </header>
 
-    <!-- Project -->
-
-    <section class="bg-light py-3">
+    <section id="project" class="text-center bg-light py-3">
       <div class="container">
-          <h1 class="l-heading">Project</h2>
-            <p class="lead">Details of project</p>
-            <p><i class="fas fa-external-link-alt"></i><a href="index.html"> View Demo</a></p>
-            <p><i class="fab fa-github-square"></i><a href="index.html"> View Source Code</a></p>
+        <h1 class="section-title">Project</h1>
+        <div class="bottom-line"></div>
+        <h3 class="lead">Burger Recipes</h3>
+        <div class="project-info">
+          <img
+            class="project-image"
+            src="img/items/item7.png"
+            alt="Burger Recipes"
+          />
+          <div class="detail bg-medium">
+            <h4 class="py-1">Key functinalities</h4>
+            <ul>
+              <li>
+                1. it's a CRUD operation app. Admin user can create read update
+                and delete data.
+              </li>
+              <li>2. use React liabrary for frontend</li>
+              <li>3. use Ruby on Rail for backend</li>
+              <li>4. use PostgresQL as database</li>
+              <li>5. use JWT for user authentication</li>
+              <li>6. deploy run time with Heroku</li>
+            </ul>
+            <i class="fas fa-external-link-alt"></i>
+            <a href="https://burger-recipe.herokuapp.com/"> View Demo</a>
+            <i class="fab fa-github-square"></i>
+            <a href="https://github.com/project-two/burgerRecipe">
+              View Source Code</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
